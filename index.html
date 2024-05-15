@@ -4,40 +4,83 @@
 <meta charset="UTF-8">
 <title>我眼中的师大 - 校园摄影大赛</title>
 <style>
-  /* 基本样式 */
   body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
   }
-  /* ...其他样式... */
-
-  /* 中等屏幕（平板电脑） */
-  @media screen and (min-width: 768px) {
-    .gallery {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  .header {
+    background-color: #005792;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  .logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: auto;
+  }
+  .logo1 {
+    left: 20px;
+  }
+  .logo2 {
+    left: 90px; /* 根据第一个logo的宽度加上期望的间隔调整这个值 */
+  }
+  .header h1 {
+    display: inline-block;
+    margin: 0;
+  }
+  .header p {
+    margin: 10px 0 0;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  .photo {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .photo img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  .author-info {
+    padding: 10px 0;
+  }
+  .footer {
+    background-color: #005792;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .author-info {
+    font-family: 'KaiTi', '楷体', serif; /* 添加楷体字体 */
+    text-align: center; /* 使文本居中 */
   }
 
-  /* 小屏幕（手机） */
-  @media screen and (max-width: 767px) {
-    .header, .footer {
-      text-align: left;
-      padding: 10px;
-    }
-    .logo {
-      width: 30px; /* 缩小logo的大小 */
-    }
-    .gallery {
-      grid-template-columns: 1fr; /* 单列显示照片 */
-    }
-    .photo img {
-      width: auto; /* 让图片自适应宽度 */
-      max-width: 100%;
-    }
+  .author-info p {
+    text-align: left; /* 除了作者名称外，其他文本左对齐 */
   }
-  
+
+  .author-info p:nth-child(1) {
+    text-align: center; /* 仅将作者名称居中 */
+  }
+  .author-info p:nth-child(2) {
+    text-align: center; /* 仅将作者名称居中 */
+  }
 </style>
 </head>
 <body>
@@ -55,62 +98,20 @@
   <div class="photo">
     <img src="http://p0.meituan.net/csc/e4eb8cea398182e384e5d71c1c07fd4f43944.jpg" alt="师大校园一角">
     <div class="author-info">
-      <p>作品序号: 1</p>
-      <p>作者: 华语菲</p>
+      <p>作品序号: 1  作者: 华语菲</p>
       <p>留言: 热爱漫无边际，生活自有分寸</p>
     </div>
   </div>
   <!-- ... 其他照片和信息 ... -->
   <!-- 重复这个区块来展示每张照片和对应的作者信息 -->
   <div class="photo">
-    <img src="http://p0.meituan.net/csc/1fbebe8125d1b0d97f5603d796b2f22c3763594.jpg" alt="师大校园一角">
+    <img src="http://p0.meituan.net/csc/7a6ea3c97ea18d3791421472ecdc09d3256264.jpg" alt="师大校园一角">
     <div class="author-info">
-      <p>作品序号: 2</p>
-      <p>作者: 苏国峰</p>
-      <p>留言: 师大在春风里。</p>
+      <p>作品序号: 2  作者: 孙雨彤</p>
+      <p>留言: 观察和感受这些细微之处，通过镜头捕捉下来，展现校园的美丽和细腻。</p>
     </div>
   </div>
-  <!-- ... 其他照片和信息 ... -->
-    <!-- 重复这个区块来展示每张照片和对应的作者信息 -->
-    <div class="photo">
-      <img src="photo2.jpg" alt="师大校园一角">
-      <div class="author-info">
-        <p>作者: 李四</p>
-        <p>作品名: 2</p>
-        <p>留言: 这是我在平原楼前拍摄的。</p>
-      </div>
-    </div>
-    <!-- ... 其他照片和信息 ... -->
-      <!-- 重复这个区块来展示每张照片和对应的作者信息 -->
-  <div class="photo">
-    <img src="photo2.jpg" alt="师大校园一角">
-    <div class="author-info">
-      <p>作者: 李四</p>
-      <p>作品名: 2</p>
-      <p>留言: 这是我在平原楼前拍摄的。</p>
-    </div>
-  </div>
-  <!-- ... 其他照片和信息 ... -->
-    <!-- 重复这个区块来展示每张照片和对应的作者信息 -->
-    <div class="photo">
-      <img src="photo2.jpg" alt="师大校园一角">
-      <div class="author-info">
-        <p>作者: 李四</p>
-        <p>作品名: 2</p>
-        <p>留言: 这是我在平原楼前拍摄的。</p>
-      </div>
-    </div>
-    <!-- ... 其他照片和信息 ... -->
-      <!-- 重复这个区块来展示每张照片和对应的作者信息 -->
-  <div class="photo">
-    <img src="photo2.jpg" alt="师大校园一角">
-    <div class="author-info">
-      <p>作者: 李四</p>
-      <p>作品名: 2</p>
-      <p>留言: 这是我在平原楼前拍摄的。</p>
-    </div>
-  </div>
-  <!-- ... 其他照片和信息 ... -->
+  
 </div>
 
 <div class="footer">
