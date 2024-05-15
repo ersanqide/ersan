@@ -4,67 +4,38 @@
 <meta charset="UTF-8">
 <title>我眼中的师大 - 校园摄影大赛</title>
 <style>
+  /* 基本样式 */
   body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
   }
-  .header {
-    background-color: #005792;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    position: relative;
+  /* ...其他样式... */
+
+  /* 中等屏幕（平板电脑） */
+  @media screen and (min-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
-  .logo {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: auto;
-  }
-  .logo1 {
-    left: 20px;
-  }
-  .logo2 {
-    left: 90px; /* 根据第一个logo的宽度加上期望的间隔调整这个值 */
-  }
-  .header h1 {
-    display: inline-block;
-    margin: 0;
-  }
-  .header p {
-    margin: 10px 0 0;
-  }
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    padding: 20px;
-  }
-  .photo {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  .photo img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-  }
-  .author-info {
-    padding: 10px 0;
-  }
-  .footer {
-    background-color: #005792;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+
+  /* 小屏幕（手机） */
+  @media screen and (max-width: 767px) {
+    .header, .footer {
+      text-align: left;
+      padding: 10px;
+    }
+    .logo {
+      width: 30px; /* 缩小logo的大小 */
+    }
+    .gallery {
+      grid-template-columns: 1fr; /* 单列显示照片 */
+    }
+    .photo img {
+      width: auto; /* 让图片自适应宽度 */
+      max-width: 100%;
+    }
   }
   
 </style>
