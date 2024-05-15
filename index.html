@@ -16,6 +16,7 @@
     padding: 20px;
     text-align: center;
     position: relative;
+    
   }
   .logo {
     position: absolute;
@@ -25,10 +26,10 @@
     height: auto;
   }
   .logo1 {
-    left: 20px;
+    left: 40px;
   }
   .logo2 {
-    left: 90px; /* 根据第一个logo的宽度加上期望的间隔调整这个值 */
+    left: 110px; /* 根据第一个logo的宽度加上期望的间隔调整这个值 */
   }
   .header h1 {
     display: inline-block;
@@ -38,12 +39,16 @@
     margin: 10px 0 0;
   }
   .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    padding: 20px;
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
   .photo {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
     background-color: #ffffff;
     border: 1px solid #ddd;
     padding: 10px;
@@ -56,6 +61,7 @@
   }
   .author-info {
     padding: 10px 0;
+    font-size :30px;
   }
   .footer {
     background-color: #005792;
@@ -78,13 +84,24 @@
   .author-info p:nth-child(1) {
     text-align: center; /* 仅将作者名称居中 */
   }
-  .author-info p:nth-child(2) {
-    text-align: center; /* 仅将作者名称居中 */
-  }
+  
+  body {
+  /* 添加背景图片 */
+  background-image: url('http://p0.meituan.net/csc/88d2568f3c8adc40e439547f9e9cbbe3788298.png');
+  /* 设置背景图片覆盖整个页面 */
+  background-size: cover;
+  /* 设置背景图片不重复 */
+  background-repeat: no-repeat;
+  /* 设置背景图片固定 */
+  background-attachment: fixed;
+
+  /* 使用RGBA颜色模式设置半透明的黑色遮罩层 */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 </style>
 </head>
 <body>
-
   <div class="header">
     <img src="http://p0.meituan.net/csc/347fa6ff866ffb09845c3a2d28ac95ff67079.png" alt="Logo 1" class="logo logo1"> <!-- 第一个logo -->
     <img src="http://p0.meituan.net/csc/88bcc9826229e3d244b6d6581e10042746504.png" alt="Logo 2" class="logo logo2"> <!-- 第二个logo -->
@@ -116,8 +133,17 @@
     <div class="photo">
       <img src="http://p0.meituan.net/csc/c29e6d1994cef9e8f6bf75de72b938bd1128333.jpg" alt="师大校园一角">
       <div class="author-info">
-        <p>作品序号: 3  作者: 夏银银 作品名称：阳光下的绚烂</p>
-        <p>留言: 此照片拍摄于五月师大东区的下沉广场。在明媚的阳光照耀下，一片繁花似锦的花丛展现在眼前。下沉广场开满了各种各样的花朵，色彩斑斓，从淡粉色到鲜艳的红色，再到温暖的黄色，构成了一幅生机勃勃的自然画卷。远处是宿舍楼，它们的白色外墙与周围的绿色植物形成鲜明对比，给人一种宁静和谐的感觉。整个场景透露出一种轻松愉悦的氛围，让人感受到大自然的美丽和生活的美好。</p>
+        <p>作品序号: 3  作者: 夏银银  作品名称：阳光下的绚烂</p>
+        <p>留言: 此照片拍摄于五月师大东区的下沉广场。在明媚的阳光照耀下，一片繁花似锦的花丛展现在眼前。下沉广场开满了各种各样的花朵，色彩斑斓，从淡粉色到鲜艳的红色，再到温暖的黄色，构成了一幅生机勃勃的自然画卷。远处是宿舍楼，它们的白色外墙与周围的绿色植物形成鲜明对比，给人一种宁静和谐的感觉。</p>
+      </div>
+    </div>
+ <!-- ... 其他照片和信息 ... -->
+  <!-- 重复这个区块来展示每张照片和对应的作者信息 -->
+    <div class="photo">
+      <img src="http://p0.meituan.net/csc/2a72eac39293c4e78a673f4d3e047d28974756.jpg" alt="师大校园一角">
+      <div class="author-info">
+        <p>作品序号: 4  作者: 毛甲申</p>
+        <p>留言: 校园时光是青春岁月最美好的一页。透过摄影，我们能够把这些美好的瞬间凝固成永恒的记忆，让岁月在镜头下静好流淌，成为我们心中一段珍贵的回忆。让我们一同怀揣着梦想，走过这片美轮美奂的校园时光。</p>
       </div>
     </div>
 </div>
