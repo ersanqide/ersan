@@ -87,20 +87,18 @@
   .author-info z{
     text-align: center; /* 仅将作者名称居中 */
   }
-  
   body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
   /* 添加背景图片 */
   background-image: url('http://p0.meituan.net/csc/88d2568f3c8adc40e439547f9e9cbbe3788298.png');
-  /* 设置背景图片覆盖整个页面 */
-  background-size: cover;
-  /* 设置背景图片不重复 */
-  background-repeat: no-repeat;
-  /* 设置背景图片固定 */
-  background-attachment: fixed;
-
+  /* 设置背景图片重复 */
+  background-repeat: repeat;
+  /* 移除背景固定或设置为滚动 */
+  background-attachment: scroll;
   /* 使用RGBA颜色模式设置半透明的黑色遮罩层 */
   background-color: rgba(0, 0, 0, 0.7);
-}
 
 </style>
 </head>
@@ -150,8 +148,17 @@
         <p>留言: 校园时光是青春岁月最美好的一页。透过摄影，我们能够把这些美好的瞬间凝固成永恒的记忆，让岁月在镜头下静好流淌，成为我们心中一段珍贵的回忆。让我们一同怀揣着梦想，走过这片美轮美奂的校园时光。</p>
       </div>
     </div>
-</div>
  <!-- ... 其他照片和信息 ... -->
+ <div class="photo">
+  <img src="http://p0.meituan.net/csc/75b2ef56da13097d123fbfecf414f87a5114773.jpg" alt="师大校园一角">
+  <div class="author-info">
+    <p>作品序号: 5  作者: 韦嘉瑶</p>
+    <p>留言: 花生壳的好朋友——瘦虎，很幸运用相机记录下了瘦虎两张威武的照片，身上肉肉的瘦虎，与名字有些不符，威严中也透露着一丝可爱。小猫是我们人类友好的朋友，有一些小猫假扮成人类与我们相爱。师大的一些小可爱们为我们的师大校园增添了许多乐趣，也为我们的生活留下一笔靓丽的色彩。在与他们玩耍中，我记录着他们，他们也在温暖着我。</p>
+  </div>
+</div>
+<!-- ... 其他照片和信息 ... -->
+</div>
+
 <div class="footer">
   <p>河南师范大学第十三期青马工程班 © 2024</p>
 </div>
