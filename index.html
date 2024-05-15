@@ -9,6 +9,21 @@
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+    /*背景*/
+  margin: 0;
+  padding: 0;
+  /* 添加背景图片 */
+  background-image: url('http://p0.meituan.net/csc/88d2568f3c8adc40e439547f9e9cbbe3788298.png');
+  /* 设置背景图片重复 */
+  background-repeat: repeat;
+  /* 移除背景固定或设置为滚动 */
+  background-attachment: scroll;
+  /* 使用RGBA颜色模式设置半透明的黑色遮罩层 */
+  background-color: rgba(0, 0, 0, 0.7);
+
+  /*防止页脚挡住内容*/
+  padding-bottom: 50px;
   }
   .header {
     background-color: #005792;
@@ -87,19 +102,12 @@
   .author-info z{
     text-align: center; /* 仅将作者名称居中 */
   }
-  body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  /* 添加背景图片 */
-  background-image: url('http://p0.meituan.net/csc/88d2568f3c8adc40e439547f9e9cbbe3788298.png');
-  /* 设置背景图片重复 */
-  background-repeat: repeat;
-  /* 移除背景固定或设置为滚动 */
-  background-attachment: scroll;
-  /* 使用RGBA颜色模式设置半透明的黑色遮罩层 */
-  background-color: rgba(0, 0, 0, 0.7);
-
+  .footer {
+  /* 其他样式保持不变 */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 </style>
 </head>
 <body>
